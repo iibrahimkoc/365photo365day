@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Login 🚀</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/loginPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="picture">
+            <img src="../pictures/loginPictrures.webp" alt="">
+        </div>
+        <div class="login-signup-div">
+            <div class="login-signup">
+                <form action="" id="login">
+                    <div>
+                        <label class="form-text">
+                            <h2>Welcome Back!</h2>
+                            <p>Please fill your details below</p>
+                        </label>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="login-email" placeholder="Enter your email" autocomplete="off">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" autocomplete="off">
+                    </div>
+
+                    <button type="submit">Login</button>
+
+                    <div class="or">----------------- or -----------------</div>
+                    <button type="submit">Google Login</button>
+
+                    <label class="no-login">Don't have an account? <span onclick="signup()">Signup</span></label>
+                </form>
+
+
+                <form action="" id="signup">
+                    <div>
+                        <label class="form-text">
+                            <h2>Welcome!</h2>
+                        </label>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="">Name</label>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="">Surname</label>
+                        <input type="text" placeholder="Enter your surname">
+                    </div>
+                    
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="signup-email" placeholder="Enter your email" autocomplate="off">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Enter your password" autocomplete="off">
+                    </div>
+                    
+                    <button type="submit">Sign up</button>
+
+                    <label class="no-login">Have an account! <span onclick="login()">Login</span></label>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/loginPage.js"></script>
+</body>
+
+</html>

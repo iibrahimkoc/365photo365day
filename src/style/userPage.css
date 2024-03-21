@@ -1,0 +1,320 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem
+}
+
+/*-------------------Dark Mode----------------------*/
+.darkMode {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    background-image: url(../pictures/darkMode.png);
+    background-size: cover;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem 0.4rem rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+
+/*----------------------Profile--------------------*/
+
+.profile {
+    width: 30rem;
+    height: 45rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem 0.8rem rgba(0, 0, 0, 0.25);
+}
+.profile > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top:-5rem;
+}
+.profilePhoto{
+    width: 15rem;
+    height: 15rem;
+    border: 0.9rem solid white;
+    border-radius: 2rem;
+    background-image: url(../pictures/2536549.jpg);
+    background-size: cover;
+}
+.profile h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "Jua", sans-serif;
+}
+.socialMediaLinks{
+    width: 25rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.socialMediaLinks > div{
+    width: 5rem;
+    height: 5rem;
+    background-color: #F0F4F9;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialMediaLinks div:not(:nth-child(2)) > img{
+    width: 3.6rem;
+    height: 3.6rem;
+}
+.socialMediaLinks div:nth-child(2) > img{
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.profileButtons{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.profileButtons > button{
+    width: 25rem;
+    height: 6rem;
+    background-color: #F0F4F9;
+    border: 0;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    font-family: "Jua", sans-serif;
+    cursor: pointer;
+}
+
+/*-------------------Month's Days------------------*/
+
+.monthsDays {
+    width: 74rem;
+    height: 53rem;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    gap: 2rem;
+    box-shadow: 0 0 2rem 0.8rem rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+.monthsDays .day{
+    width: 8rem;
+    height: 8rem;
+    background-color: #F0F4F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: "Julee", cursive;
+    border-radius: 2rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.monthsDays .day:hover{
+    background-color: aqua;
+}
+
+/*----------------------Months Level---------------------*/
+
+.levelBar{
+    width: 19rem;
+    height: 5.5rem;
+    background-color: #F7F9FC;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+.levelBarText{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.9rem;
+}
+.levelBarText > div{
+    font-size: 2rem;
+    font-family: "Jua", cursive;
+}
+.levelBarValue{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.levelBarValue > div{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.3rem;
+}
+.levelBarValue div:nth-child(1){
+    background-color: #ECF5FF;
+}
+.levelBarValue div:nth-child(2){
+    background-color: #D5E6FB;
+}
+.levelBarValue div:nth-child(3){
+    background-color: #B1D4FF;
+}
+.levelBarValue div:nth-child(4){
+    background-color: #91C2FF;
+}
+.levelBarValue div:nth-child(5){
+    background-color: #75B2FF;
+}
+.levelBarValue div:nth-child(6){
+    background-color: #539FFF;
+}
+.levelBarValue div:nth-child(7){
+    background-color: #0071FF;
+}
+
+/*----------------------Months---------------------*/
+
+.monthsBox {
+    width: 10rem;
+    height: 30rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem 0.8rem rgba(0, 0, 0, 0.25);
+}
+
+.upButton {
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.months {
+    width: 100%;
+    height: 27rem;
+    overflow-y: auto;
+}
+
+.months::-webkit-scrollbar {
+    width: 0;
+}
+
+.months>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.months>div:nth-child(1) {
+    width: 8rem;
+    height: 8rem;
+    margin: 0.5rem 1rem 1rem 1rem;
+    background-color: rgb(24, 18, 9);
+    border-radius: 2rem;
+}
+
+.months>div:nth-child(12) {
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem 1rem 0.5rem 1rem;
+    background-color: rgb(24, 18, 9);
+    border-radius: 2rem;
+}
+
+.months>div:not(:nth-child(1), :nth-child(12)) {
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem 1rem;
+    background-color: blanchedalmond;
+    border-radius: 2rem;
+}
+
+.downButton {
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.months div>p {
+    font-size: 2.8rem;
+    color: white;
+    font-family: "Just Another Hand", cursive;
+    text-shadow: 1px 1px black;
+    letter-spacing: 1px;
+}
+
+
+
+.january{
+    background-image: url();
+    background-size: cover;
+}
+.february{
+    background-image: url();
+    background-size: cover;
+}
+.march{
+    background-image: url(../pictures/march.jpg);
+    background-size: cover;
+}/*✅*/
+.april{
+    background-image: url(../pictures/april.jpg);
+    background-size: cover;
+}/*✅*/
+.may{
+    background-image: url(../pictures/may.jpg);
+    background-size: cover;
+}/*✅*/
+.june {
+    background-image: url(../pictures/June.jpg);
+    background-size: cover;
+}/*✅*/
+.july {
+    border: 0.6rem solid #CFE1F7;
+    background-image: url(../pictures/July.jpg);
+    background-size: cover;
+}/*✅*/
+.august {
+    background-image: url(../pictures/August.jpg);
+    background-size: cover;
+}/*✅*/
+.september{
+    background-image: url();
+    background-size: cover;
+}
+.october{
+    background-image: url();
+    background-size: cover;
+}
+.november{
+    background-image: url();
+    background-size: cover;
+}
+.december{
+    background-image: url();
+    background-size: cover;
+}
+
+.march p,
+.april p,
+.may p,
+.june p,
+.july p,
+.august p{
+    font-size: 3.5rem !important;
+}
